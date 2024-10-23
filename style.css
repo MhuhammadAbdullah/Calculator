@@ -1,11 +1,11 @@
-* {
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Arial', sans-serif;
+    font-family: Arial, sans-serif;
 }
 
-body {
+body{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -13,7 +13,20 @@ body {
     background-color: #e0e5ec;
 }
 
-.calculator {
+.container {
+    text-align: center;
+}
+
+.heading {
+    margin-bottom: 20px;
+}
+
+.heading h1 {
+    font-size: 2rem;
+    color: #000000;
+}
+
+.calculator{
     width: 350px;
     background-color: #e0e5ec;
     border-radius: 25px;
@@ -21,13 +34,13 @@ body {
     box-shadow: 7px 7px 15px #c1c5ca, -7px -7px 15px #ffffff;
 }
 
-#display {
+#display{
     width: 100%;
     height: 70px;
     border-radius: 15px;
     border: none;
     background-color: #e0e5ec;
-    box-shadow: inset 5px 5px 10px #c1c5ca, inset -5px -5px 10px #ffffff;
+    box-shadow: inset 5px 5px 10px #c1c5ca, inset  -5px -5px  10px  #ffffff;
     font-size: 2.5rem;
     text-align: right;
     padding: 20px;
@@ -61,19 +74,27 @@ button:active {
 }
 
 button.zero {
-    grid-column: span 1;
-    border-radius: 50%;
+    grid-column: span 1; /* Removed span for smaller size */
+    border-radius: 50%; /* Standard circle size */
 }
 
+
 button.equal {
-    background-color: #4caf50;
+    background-color: #df8005;
     color: white;
     border-radius: 35px;
-    height: 80px;
+    height: 60px;
     font-size: 2rem;
-    grid-column: span 2; /* Width increased to span two columns */
+    grid-column: span 2; /* Spans across 2 columns to increase width */
 }
 
 button.equal:hover {
-    background-color: #45a049;
+    background-color: #df8005;
+}
+
+.copyright {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+    color: #888; /* Light grey color */
 }
