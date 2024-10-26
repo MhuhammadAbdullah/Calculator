@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -16,34 +18,35 @@
         <div class="calculator">
             <input type="text" id="display" disabled placeholder="0">
             <div class="buttons">
-                <button>AC</button>
-                <button>DEL</button>
-                <button>%</button>
-                <button>/</button>
-                <button>7</button>
-                <button>8</button>
-                <button>9</button>
-                <button>x</button>
-                <button>4</button>
-                <button>5</button>
-                <button>6</button>
-                <button>-</button>
-                <button>1</button>
-                <button>2</button>
-                <button>3</button>
-                <button>+</button>
-                <button class="zero">0</button>
-                <button>.</button>
-                <button class="equal">=</button>
+                <button class="change-color" onclick="clearDisplay()">AC</button>
+                <button class="change-color" onclick="deleteLast()">DEL</button>
+                <button class="change-color" onclick="appendOperator('%')">%</button>
+                <button class="change-color" onclick="appendOperator('/')">/</button>
+                <button onclick="appendNumber('7')">7</button>
+                <button onclick="appendNumber('8')">8</button>
+                <button onclick="appendNumber('9')">9</button>
+                <button class="change-color" onclick="appendOperator('*')">x</button>
+                <button onclick="appendNumber('4')">4</button>
+                <button onclick="appendNumber('5')">5</button>
+                <button onclick="appendNumber('6')">6</button>
+                <button class="change-color" onclick="appendOperator('-')">-</button>
+                <button onclick="appendNumber('1')">1</button>
+                <button onclick="appendNumber('2')">2</button>
+                <button onclick="appendNumber('3')">3</button>
+                <button class="change-color" onclick="appendOperator('+')">+</button>
+                <button class="zero" onclick="appendNumber('0')">0</button>
+                <button onclick="appendDot()">.</button>
+                <button class="equal" onclick="calculateResult()">=</button>
             </div>
         </div>
         <footer>
             <div class="copyright">
-                <p>&copy; 2024 Muhammad Abdullah. All rights reserved.</p>
+                <p>copyright &copy; 2024 Muhammad Abdullah. All rights reserved.</p>
             </div>
         </footer>
     </div>
-   
+
+    <script src="script.js"></script>
 </body>
 
 </html>
