@@ -1,16 +1,16 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: Arial, sans-serif;
 }
 
-body{
+body {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: #e0e5ec;
+    background-color: #ffffff; /* Dark background */
 }
 
 .container {
@@ -23,25 +23,26 @@ body{
 
 .heading h1 {
     font-size: 2rem;
-    color: #000000;
+    color: #ffffff; /* White text */
 }
 
-.calculator{
+.calculator {
     width: 350px;
-    background-color: #e0e5ec;
+    background-color: #1e1e1e; /* Dark background for calculator */
     border-radius: 25px;
     padding: 20px;
-    box-shadow: 7px 7px 15px #c1c5ca, -7px -7px 15px #ffffff;
+    box-shadow: 7px 7px 15px #141414, -7px -7px 15px #2a2a2a;
 }
 
-#display{
+#display {
     width: 100%;
     height: 70px;
     border-radius: 15px;
     border: none;
-    background-color: #e0e5ec;
-    box-shadow: inset 5px 5px 10px #c1c5ca, inset  -5px -5px  10px  #ffffff;
+    background-color: #333333; /* Darker display */
+    box-shadow: inset 5px 5px 10px #1e1e1e, inset -5px -5px 10px #4a4a4a;
     font-size: 2.5rem;
+    color: #70e000; /* White text */
     text-align: right;
     padding: 20px;
     margin-bottom: 20px;
@@ -58,43 +59,47 @@ button {
     height: 60px;
     border-radius: 50%;
     border: none;
-    background-color: #e0e5ec;
-    box-shadow: 5px 5px 10px #c1c5ca, -5px -5px 10px #ffffff;
+    background-color: #333333; /* Darker button color */
+    box-shadow: 5px 5px 10px #1e1e1e, -5px -5px 10px #4a4a4a;
     font-size: 1.5rem;
+    color: #ffffff; /* White text */
     cursor: pointer;
     transition: all 0.2s ease;
 }
 
 button:hover {
-    box-shadow: 2px 2px 5px #c1c5ca, -2px -2px 5px #ffffff;
+    box-shadow: 2px 2px 5px #1e1e1e, -2px -2px 5px #4a4a4a;
 }
 
 button:active {
-    box-shadow: inset 5px 5px 10px #c1c5ca, inset -5px -5px 10px #ffffff;
+    box-shadow: inset 5px 5px 10px #1e1e1e, inset -5px -5px 10px #4a4a4a;
 }
 
 button.zero {
-    grid-column: span 1; /* Removed span for smaller size */
-    border-radius: 50%; /* Standard circle size */
+    grid-column: span 1; 
+    border-radius: 50%;
 }
 
-
 button.equal {
-    background-color: #df8005;
+    background-color: #fb8500; /* Bright orange color */
     color: white;
     border-radius: 35px;
     height: 60px;
     font-size: 2rem;
-    grid-column: span 2; /* Spans across 2 columns to increase width */
+    grid-column: span 2;
 }
 
 button.equal:hover {
-    background-color: #df8005;
+    background-color: #fb8500; /* Slightly darker on hover */
 }
 
 .copyright {
     text-align: center;
     margin-top: 20px;
     font-size: 14px;
-    color: #888; /* Light grey color */
+    color: #333333; /* Light grey text */
+}
+
+.change-color{
+    color: #70e000;
 }
